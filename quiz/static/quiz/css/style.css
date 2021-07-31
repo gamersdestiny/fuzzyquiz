@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+	--blue-500: #4f73df;
+	--white-300: #f6f7fa;
+	--black-400: #0D1117;
+	--black-300: #333;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--white-300);	
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ===============navbar section==================  */
+
+.navbar-s{
+	background: var(--blue-500);
+	color: var(--white-300);
+	padding: 1rem 0;
+	font-size: 1.2rem;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 1rem;
+}
+
+.u-lists{
+	list-style: none;
+	display: flex;
+	
+}
+
+.links{
+	margin: 0 .5rem;
+}
+
+/* ==============================start section================  */
+
+.start-s{
+	background: url('/static/quiz/media/quiz-bg.jpg') no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	position: relative;
+	height: 90vh;
+	width: 100vw;
+}
+
+.start-cont{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50% -50%);
+}
+
+.start{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
