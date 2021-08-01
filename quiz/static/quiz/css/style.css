@@ -21,8 +21,6 @@ body {
 /* ===============navbar section==================  */
 
 .navbar-s{
-	background: var(--blue-500);
-	color: var(--white-300);
 	padding: 1rem 0;
 	font-size: 1.2rem;
 }
@@ -48,7 +46,8 @@ body {
 .start-s{
 	background: url('/static/quiz/media/quiz-bg.jpg') no-repeat;
 	background-position: center center;
-	background-size: 100%;
+	background-size: 100% 100%;
+	background-blend-mode: darken;
 	position: relative;
 	height: 90vh;
 	width: 100vw;
@@ -58,10 +57,10 @@ body {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50% -50%);
+	transform: translate(-50%, -50%);
 }
 
 .start{
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 }

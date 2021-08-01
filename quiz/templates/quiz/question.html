@@ -1,0 +1,33 @@
+{% extends 'quiz/index.html' %}
+
+{% load static %}
+{% block css %}
+
+{% endblock %}
+
+{% block title %}
+<title>Quiz - Categories</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container-qs">
+	<div class="question">
+	</div>
+	<div class="choices">
+	</div>
+</div>
+
+
+<div class="answers">
+	<li class="answer"></li>
+	<li class="answer"></li>
+	<li class="answer"></li>
+	<li class="answer"></li>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script src="{% static 'quiz/js/index.js' %}"></script>
+{% endblock %}
+

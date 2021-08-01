@@ -16,13 +16,13 @@
 	{% endblock %}
 </head>
 <body>
-	<section class="navbar-s">
+	<section class="navbar-s brick">
 		<nav class="navbar">
 			<h3 class="brand">Fuzzy Quiz</h3>
 			<ul class="u-lists">
 				<li class="links"><a class="link-a" href="{% url 'home' %}">Home</a></li>
 				<li class="links"><a class="link-a" href="{% url 'categories' %}">Categories</a></li>
-				<li class="links"><a class="link-a" href="">Login</a></li>
+				<li class="links"><a class="link-a" href="/admin">Login</a></li>
 				<li class="links"><a class="link-a" href="">About</a></li>
 			</ul>
 		</nav>
@@ -30,6 +30,10 @@
 
 	{% block content %}
 	{% endblock %}
+
+	{% block javascript %}
+	{% endblock %}
+
 </body>
 </html>
 

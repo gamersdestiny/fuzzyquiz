@@ -19,6 +19,22 @@ a{
 	color: var(--white-300);
 }
 
+.pinky-blue{
+background: #cb28ce;
+color: white;
+border: 5px solid #8ec5fd;
+box-shadow: 2px 0px 23px 10px #8ec5fd;
+}
+
 shadow{
-	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+	box-shadow: 2px 0rem 1.75rem 10 currentColor;
+}
+
+.brick{
+	background: firebrick;
+	color: white;
+}
+
+.hide{
+	display: none;
 }
