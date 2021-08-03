@@ -1,14 +1,56 @@
 {% extends 'quiz/index.html' %}
 
+{% load static %}
+{% block css %}
+
+{% endblock %}
+
 {% block title %}
-<title>Quiz - Home</title>
+<title>Quiz - Categories</title>
 {% endblock %}
 
 {% block content %}
-<section class="start-s">
-	<div class="start-cont">
-		<a href="{% url 'categories' %}" class="start button brick shadow
-		">Start Quiz</a>
+
+
+<div class="main-cq">
+	<div class="marks-c">
+		<h3 class="marks hide">Total Marks = </h3>
+		<h3 class="time"></h3>
 	</div>
-</section>
+	<div class="question">
+	</div>
+	<div class="choices">
+		<div class="loading hide">
+			<h3 class="load-text center">Loading</h3>
+			<p class="dots">.-.</p>
+		</div>
+		<div class="label">
+			<div class="inc-s"><input class="checkbox-q" type="checkbox" name="" id="choice1"><label class="l-choice1" for="choice1"></label></div>
+			<div class="inc-s"><input class="checkbox-q" type="checkbox" name="" id="choice2"><label class="l-choice2" for="choice2"></label></div>
+			<div class="inc-s"><input class="checkbox-q" type="checkbox" name="" id="choice3"><label class="l-choice3" for="choice3"></label></div>
+			<div class="inc-s"><input class="checkbox-q" type="checkbox" name="" id="choice4"><label class="l-choice4" for="choice4"></label></div>
+		</div>
+		<div class="answers">
+			<h2 class="answer"></h2>
+			<h2 class="answer2"></h2>
+			<h2 class="answer3"></h2>
+			<h2 class="answer4"></h2>
+		</div>
+	</div>
+	
+	<div class="buttons">
+		<button class="ans-rdy-btn button brick" type="submit">Ready</button>
+		<button class="ans-sub-btn button primary" type="submit">submit</button>
+		<button class="ans-nxt-btn button secondary" type="submit">Next</button>
+		<a class="ans-bth-btn button secondary hide" href="{% url 'home'%}">Back To Home</a>
+		<!-- <button class="ans-prv-btn button secondary" type="submit">Previous</button> -->
+	</div>
+
+</div>
+
 {% endblock %}
+
+{% block javascript %}
+<script src="{% static 'quiz/js/index.js' %}"></script>
+{% endblock %}
+

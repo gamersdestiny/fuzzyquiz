@@ -1,33 +1,15 @@
 {% extends 'quiz/index.html' %}
 
-{% load static %}
-{% block css %}
-
-{% endblock %}
-
 {% block title %}
-<title>Quiz - Categories</title>
+<title>Quiz - Home</title>
 {% endblock %}
 
 {% block content %}
-
-<div class="container-qs">
-	<div class="question">
+<section class="start-s">
+	<div class="start-cont">
+		<a href="{% url 'question' %}" class="start button brick
+		 shadow
+		">Start Quiz</a>
 	</div>
-	<div class="choices">
-	</div>
-</div>
-
-
-<div class="answers">
-	<li class="answer"></li>
-	<li class="answer"></li>
-	<li class="answer"></li>
-	<li class="answer"></li>
-</div>
+</section>
 {% endblock %}
-
-{% block javascript %}
-<script src="{% static 'quiz/js/index.js' %}"></script>
-{% endblock %}
-
