@@ -1,0 +1,1 @@
+web: gunicorn fuzzyquiz.wsgi --log-file -
