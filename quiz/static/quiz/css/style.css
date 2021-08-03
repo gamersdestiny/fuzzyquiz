@@ -67,6 +67,9 @@ body {
 
 .choices{
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .input{
@@ -79,7 +82,12 @@ body {
 
 .label{
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;
+	margin: .5rem 1rem;
+	font-size: 1.2rem;
+}
+.inc-s > input{
+	margin-right: .3rem;
 }
 
 .main-cq{
@@ -103,10 +111,6 @@ body {
 	transform: translate(-50%, -50%);
 }	
 
-
-
-
-
 .loading {
 	position: absolute;
 	width: 100%;
@@ -118,4 +122,31 @@ body {
 .loading .load-text{
 	color: white;
 	transform: translateX(-2%) infinite;
+}
+
+.marks-c{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 1rem;
+}
+
+
+.buttons{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.answers{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.results {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem 0;
 }

@@ -13,13 +13,14 @@
 
 
 <div class="main-cq">
-	<div class="marks-c">
-		<h3 class="marks hide">Total Marks = </h3>
-		<h3 class="time"></h3>
-	</div>
-	<div class="question">
-	</div>
+	<div class="marks-c hide">
+		<h3 class="marks">Total Marks = 0</h3>
+		<h3 class="time">Time: 0</h3>
+	</div>	
 	<div class="choices">
+
+		<div class="question">
+		</div>
 		<div class="loading hide">
 			<h3 class="load-text center">Loading</h3>
 			<p class="dots">.-.</p>
@@ -37,12 +38,15 @@
 			<h2 class="answer4"></h2>
 		</div>
 	</div>
-	
+	<div class="results">
+		<h2 class="pass hide" style="color: green;">YAY!!! You have passed the Test</h2>
+		<h2 class="fail hide" style="color: firebrick;">SORRY:-( You have Failed the Test</h2>
+	</div>
 	<div class="buttons">
-		<button class="ans-rdy-btn button brick" type="submit">Ready</button>
+		<button class="ans-rdy-btn button brick" type="submit">Start</button>
 		<button class="ans-sub-btn button primary" type="submit">submit</button>
 		<button class="ans-nxt-btn button secondary" type="submit">Next</button>
-		<a class="ans-bth-btn button secondary hide" href="{% url 'home'%}">Back To Home</a>
+		<a class="ans-bth-btn button secondary hide" href="{% url 'home'%}">Start Again</a>
 		<!-- <button class="ans-prv-btn button secondary" type="submit">Previous</button> -->
 	</div>
 
