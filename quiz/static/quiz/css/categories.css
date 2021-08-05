@@ -1,0 +1,13 @@
+.categories-s{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+
+.cards{
+	padding: .5rem;
+	margin: .5rem;
+	background: white;
+	border-radius: .5em;
+
+}

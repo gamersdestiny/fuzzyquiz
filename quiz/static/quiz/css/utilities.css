@@ -1,0 +1,48 @@
+a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+.button{
+	padding: .5rem 1rem;
+	text-decoration: none;
+	border-radius: .25em;
+}
+
+.primary{
+	background: var(--blue-500);
+	color: var(--white-300);
+}
+
+.secondary{
+	background: var(--black-300);
+	color: var(--white-300);
+}
+
+.pinky-blue{
+background: #cb28ce;
+color: white;
+border: 5px solid #8ec5fd;
+box-shadow: 2px 0px 23px 10px #8ec5fd;
+}
+
+shadow{
+	box-shadow: 2px 0rem 1.75rem 10 currentColor;
+}
+
+.brick{
+	background: firebrick;
+	color: white;
+}
+
+.hide{
+	display: none;
+	transition: .5s ease-in-out;
+}
+
+.center{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
