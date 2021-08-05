@@ -82,6 +82,7 @@ fetch(curl)
 			fetch(cqurl)
 			.then((resp) => (resp.json()))
 			.then(function(category){
+				cTitle.classList.add('hide');
 				nextBtn.classList.add('hide')
 				cContainer.classList.add('hide');
 				qContainer.classList.remove('hide');
@@ -143,6 +144,7 @@ fetch(curl)
 						answerlst.push(element.question[qNo].answer3)
 						const iChoice = document.querySelectorAll('.checkbox-q:checked');
 						iChoice.forEach((elements) => {
+							elements.checked = false
 						if (answerlst.includes(elements.parentElement.textContent)){
 							elements.parentElement.style.color='green';
 							mark++;
