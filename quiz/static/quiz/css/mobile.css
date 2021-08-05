@@ -16,4 +16,9 @@
 	.label{
 		flex-direction: column;
 	}
+
+	.inc-s{
+		margin: .7rem 0;
+		justify-content: left;
+	}
 }
