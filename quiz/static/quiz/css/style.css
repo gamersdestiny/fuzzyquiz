@@ -14,7 +14,8 @@
 }
 
 body {
-	background: var(--white-300);	
+	background: url('/static/quiz/media/quiz-bg.jpg') no-repeat;
+	background-size: 100vw 100vh;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -91,8 +92,11 @@ body {
 }
 
 .main-cq{
-	width: 25rem;
-	max-width: 25rem;
+	background: var(--white-300);
+	width: 30rem;
+	padding: 2rem;
+	max-width: 30rem;
+	border-radius: .5rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -105,6 +109,7 @@ body {
 }
 
 .ans-rdy-btn{
+	font-size: 2rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -150,3 +155,4 @@ body {
 	align-items: center;
 	padding: .5rem 0;
 }
+

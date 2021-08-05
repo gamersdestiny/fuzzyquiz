@@ -1,0 +1,19 @@
+@media screen and (max-width: 700px) {
+	
+	.category-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.main-cq{
+		width: 99%;
+		padding: 1rem;
+	}
+
+	.question h2 {
+		font-size: 100%;
+	}
+	.label{
+		flex-direction: column;
+	}
+}

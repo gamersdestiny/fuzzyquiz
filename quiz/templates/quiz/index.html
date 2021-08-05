@@ -8,7 +8,7 @@
 	{% load static %}
 	<link rel="stylesheet" href="{% static 'quiz/css/style.css' %}">
 	<link rel="stylesheet" href="{% static 'quiz/css/utilities.css' %}">
-
+	<link rel="shortcut icon" href="{% static 'quiz/media/favicon.png' %}" type="image/x-icon">
 	{% block css %}
 	{% endblock %}
 
@@ -18,10 +18,9 @@
 <body>
 	<section class="navbar-s brick">
 		<nav class="navbar">
-			<h3 class="brand">Fuzzy Quiz</h3>
+			<h3 class="brand"><a href="{% url 'home' %}">Fuzzy Quiz</a></h3>
 			<ul class="u-lists">
-				<li class="links"><a class="link-a" href="{% url 'home' %}">Home</a></li>
-				<li class="links"><a class="link-a" href="">About</a></li>
+				<h3 class="links"><a class="link-a" href="{% url 'home' %}">Quit</a></h3>
 			</ul>
 		</nav>
 	</section>
