@@ -29,6 +29,7 @@ const loading = document.querySelector('.loading');
 
 const curl = '/category-api/';
 const qTitles = document.querySelectorAll('.q-title');
+const cTitle = document.querySelector('.c-title');
 const qDetails = document.querySelectorAll('.q-detail');
 const qCards = document.querySelectorAll('.cards');
 
@@ -39,6 +40,7 @@ const maincq = document.querySelector('.main-cq')
 choices.classList.add('hide');
 submitBtn.classList.add('hide');
 nextBtn.classList.add('hide');
+cTitle.classList.add('hide')
 // previousBtn.classList.add('hide');
 
 let urlNo = 1;
@@ -57,6 +59,7 @@ readyBtn.addEventListener('click', (e)=>{
 fetch(curl)
 .then((resp) => (resp.json()))
 .then(function(element){
+	cTitle.classList.remove('hide')
 	var c = 0;
 	var qNo = 0;
 	element.forEach(e => {
@@ -79,6 +82,7 @@ fetch(curl)
 			fetch(cqurl)
 			.then((resp) => (resp.json()))
 			.then(function(category){
+				nextBtn.classList.add('hide')
 				cContainer.classList.add('hide');
 				qContainer.classList.remove('hide');
 				console.log(category.question[qNo])
@@ -116,6 +120,7 @@ fetch(curl)
 
 		submitBtn.addEventListener('click', (e)=>{
 			loading.classList.remove('hide');
+			submitBtn.classList.add('hide');
 			url = '/questions-api/'+  urlNo;
 			e.preventDefault();
 			const iChoice = document.querySelectorAll('.checkbox-q');
@@ -155,6 +160,7 @@ fetch(curl)
 							elements.parentElement.style.color='green';
 						}
 						});
+						nextBtn.classList.remove('hide');
 					}, 1500)
 			}
 		})
@@ -167,6 +173,9 @@ fetch(curl)
 			answer4.classList.remove('hide')
 		})
 		nextBtn.addEventListener('click', ()=>{
+			nextBtn.classList.add('hide');
+			submitBtn.classList.remove('hide');
+
 			qNo++;
 			fetch(cqurl).then((resp) => (resp.json()))
 			.then(function(nq){

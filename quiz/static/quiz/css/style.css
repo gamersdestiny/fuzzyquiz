@@ -93,9 +93,9 @@ body {
 
 .main-cq{
 	background: var(--white-300);
-	width: 30rem;
+	width: 50rem;
 	padding: 2rem;
-	max-width: 30rem;
+	max-width: 50rem;
 	border-radius: .5rem;
 	position: absolute;
 	top: 50%;
