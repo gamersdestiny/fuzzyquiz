@@ -12,9 +12,7 @@ router.register('questions-api', views.QuestionViewSet)
 router.register('category-api', CategoryViewSet)
 
 urlpatterns = [
-	path('', views.home, name='home'),
-	path('categories/', views.categories, name='categories'),
-	path('question/', views.question, name='question'),
+	path('', views.home, name='home'),	
 	path('', include(router.urls))
 
 ]+ staticfiles_urlpatterns()

@@ -1,4 +1,4 @@
-.categories-s{
+.category-container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 
@@ -10,4 +10,24 @@
 	background: white;
 	border-radius: .5em;
 
+}
+
+.q-title{
+	color: #1956c7;
+	margin-bottom: 1rem;
+}
+
+.c-title{
+	color: white;
+	margin: .5rem;
+}
+
+.q-detail{
+	margin: 1rem;
+}
+
+
+.cards{
+	cursor: pointer;
+	margin: 1rem .5rem;
 }

@@ -1,7 +1,7 @@
 # local files
 problem.txt
 env
-
+staticfiles
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

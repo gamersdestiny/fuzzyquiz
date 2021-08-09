@@ -25,7 +25,7 @@ class Category(models.Model):
 		return self.categoryName
 
 	def get_category(self):
-		return self.question.all()
+		return self.question__set.all()
 
 
 class Results(models.Model):
